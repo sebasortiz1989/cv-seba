@@ -5,6 +5,7 @@ import ProjectItem from "./components/ProjectItem.jsx";
 import picture from './assets/picture.jpg'
 import './App.css'
 
+// When updating just run (npm run deploy) to update gh pages
 function App() {
     // portfolio: "yourportfolio.com",
     const personalData = {
