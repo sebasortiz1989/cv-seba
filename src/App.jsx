@@ -43,7 +43,8 @@ function App() {
                 " responsible for generating events and executing commands to control electrical components.",
                 "Unit testing for new implementations to ensure functionality, reliability, and code quality.",
                 "Enhanced code performance by utilizing profiling tools and optimizing asynchronous tasks for improved" +
-                " efficiency and responsiveness."
+                " efficiency and responsiveness.",
+                "Worked within a team following Scrum methodologies for project development, using ClickUp for task management and collaboration",
             ]
         },
         {
