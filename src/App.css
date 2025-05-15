@@ -133,6 +133,7 @@ body {
 
 .section-content p,
 .section-content ul {
+  white-space: pre-wrap;
   margin-bottom: 15px;
   font-size: 1em;
   color: var(--text-light-color);
