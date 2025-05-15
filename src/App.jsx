@@ -5,16 +5,16 @@ import ProjectItem from "./components/ProjectItem.jsx";
 import picture from './assets/picture.jpg'
 import './App.css'
 
-// When updating just run (npm run deploy) to update gh pages
+// When updating just run (npm run deploy)
 function App() {
     // portfolio: "yourportfolio.com",
+    // phone: "",
     const personalData = {
         name: "Juan Sebastian Ortiz",
         title: "FullStack Developer | .NET | Avalonia | Swift | Swift UI | Xamarin | WPF | JAVA | JS | React |",
         email: "sebasortizsanta@gmail.com",
-        phone: "(+55) 13 98164 0022",
-        linkedin: "linkedin.com/in/sebastian-o-5a00b7203/",
-        github: "github.com/sebasortiz1989",
+        linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203/",
+        github: "www.github.com/sebasortiz1989",
         location: "Santos, SP, Brazil",
         profilePictureUrl: picture,
         summary: "Full Stack Developer with expertise in implementing best programming practices," +
