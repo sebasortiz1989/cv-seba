@@ -13,7 +13,7 @@ function App() {
         name: "Juan Sebastian Ortiz",
         title: "FullStack Developer | .NET | Avalonia | Swift | Swift UI | Xamarin | WPF | JAVA | JS | React |",
         email: "sebasortizsanta@gmail.com",
-        linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203/",
+        linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
         github: "www.github.com/sebasortiz1989",
         location: "Santos, SP, Brazil",
         profilePictureUrl: picture,
