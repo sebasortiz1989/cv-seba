@@ -38,8 +38,9 @@ function App() {
                 " SOLID principles for maintainable and scalable code. Managed version control and collaborated effectively" +
                 " using Git.",
             responsibilities: [
-                "UI development with an emphasis on creating intuitive and interactive interfaces using Avalonia" +
-                " components and integrating mapping functionalities",
+                "Development of cross-platform apps for agricultural applications using Avalonia",
+                "UI development with an emphasis on creating intuitive and interactive interfaces and components",
+                "Development of Skiasharp components to be used in mapping functionalities within the applications",
                 "Development of controllers to manage the interaction between the application frontend and the ViewModel," +
                 " responsible for generating events and executing commands to control electrical components.",
                 "Unit testing for new implementations to ensure functionality, reliability, and code quality.",
@@ -215,7 +216,7 @@ function App() {
             )}
 
             <footer className="resume-footer">
-                <p>Last updated: {new Date().toLocaleDateString()}</p>
+                <p>Last updated: Jun - 06 - 2025</p>
             </footer>
         </div>
     );
