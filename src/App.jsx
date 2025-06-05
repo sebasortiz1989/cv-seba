@@ -99,7 +99,7 @@ function App() {
         {
             degree: "Msc Computer Science",
             institution: "Heriot Watt University",
-            dates: "Fev 2025 - Present",
+            dates: "February 2025 - Present",
             details: "Master's Degree"
         },
         {
@@ -216,7 +216,7 @@ function App() {
             )}
 
             <footer className="resume-footer">
-                <p>Last updated: Jun - 06 - 2025</p>
+                <p>Last updated: Jun - 05 - 2025</p>
             </footer>
         </div>
     );
