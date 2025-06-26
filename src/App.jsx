@@ -11,7 +11,7 @@ function App() {
     // phone: "",
     const personalData = {
         name: "Juan Sebastian Ortiz",
-        title: "FullStack Developer | .NET | Avalonia | Swift | Swift UI | Xamarin | WPF | JAVA | JS | React |",
+        title: "FullStack Developer | .NET | Avalonia | Swift | Swift UI | Xamarin | WPF | Java | JS | React | React Native |",
         email: "sebasortizsanta@gmail.com",
         linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
         github: "www.github.com/sebasortiz1989",
@@ -143,7 +143,6 @@ function App() {
                     <p className="job-title">{personalData.title}</p>
                     <div className="contact-info">
                         {personalData.email && <p><span className="contact-label">Email:</span> <a href={`mailto:${personalData.email}`}>{personalData.email}</a></p>}
-                        {personalData.phone && <p><span className="contact-label">Phone:</span> {personalData.phone}</p>}
                         {personalData.location && <p><span className="contact-label">Location:</span> {personalData.location}</p>}
                         {personalData.linkedin && <p><span className="contact-label">LinkedIn:</span> <a href={`https://www.linkedin.com/in/${personalData.linkedin.split('/').pop()}`} target="_blank" rel="noopener noreferrer">{personalData.linkedin}</a></p>}
                         {personalData.github && <p><span className="contact-label">GitHub:</span> <a href={`https://github.com/${personalData.github.split('/').pop()}`} target="_blank" rel="noopener noreferrer">{personalData.github}</a></p>}
