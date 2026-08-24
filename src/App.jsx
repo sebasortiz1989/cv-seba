@@ -13,7 +13,7 @@ function App() {
         name: "Juan Sebastian Ortiz",
         title: "Senior .NET Engineer  |  Cross-Platform Desktop (WPF · Avalonia · .NET MAUI)  |  Industrial & Engineering Systems",
         email: "sebasortizsanta@gmail.com",
-        linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
+        linkedin: "www.linkedin.com/in/sebastian-ortiz-dev",
         github: "www.github.com/sebasortiz1989",
         location: "Santos, SP, Brazil (UTC-3) — remote, overlapping European and North American hours",
         profilePictureUrl: picture,
@@ -47,7 +47,7 @@ function App() {
                 "Cross-framework architecture: migrated core control systems from WPF to .NET MAUI and Avalonia while they stayed in service, and maintain a visualisation library whose single core is consumed by four UI frameworks — WPF, WinForms, MAUI and Avalonia — each with its own run host.",
                 "Custom real-time rendering: built mapping and charting engines on SkiaSharp, in 2D and 3D, delivering live positional visualisation at usable frame rates on resource-constrained field devices where off-the-shelf charting could not run.",
                 "Concurrency and responsiveness: refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
-                "Architecture enforced by structure: layering is a build-time guarantee rather than a review convention — the presentation-model assemblies cannot reference the view assemblies, because the project graph forbids it. Applied Domain-Driven Design and SOLID throughout, and built a reusable XAML component library on strict MVVM.",
+                "Strict layering, enforced by the build: work daily in a codebase where the presentation-model assemblies cannot reference the view assemblies, because the project graph forbids it — layering as a build-time guarantee rather than a review convention. Applied Domain-Driven Design and SOLID throughout, and built a reusable XAML component library on strict MVVM.",
                 "Engineering standards at company scale: shared analyzer and build configuration across every repository — one settings source, StyleCop enforcement, signed assemblies, MSBuild project classification and CI pipelines assembled from shared components.",
                 "Domain translation: work directly with hydraulics and agronomy engineers, turning physical-system requirements and field behaviour into software specifications.",
             ]
