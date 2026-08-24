@@ -15,7 +15,7 @@ function App() {
         email: "sebasortizsanta@gmail.com",
         linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
         github: "www.github.com/sebasortiz1989",
-        location: "Santos, SP, Brazil (UTC-3) — available for remote roles worldwide",
+        location: "Santos, SP, Brazil (UTC-3) — remote, overlapping European and North American hours",
         profilePictureUrl: picture,
         summary: "Senior software engineer with five years building production .NET systems, specialising in " +
             "complex cross-platform desktop UI — WPF, Avalonia and .NET MAUI. Currently delivering a full product " +

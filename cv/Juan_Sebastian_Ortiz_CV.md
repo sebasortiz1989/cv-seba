@@ -1,7 +1,7 @@
 # Juan Sebastián Ortiz
 **Senior Software Engineer — AI-Native Development Practice**
 
-Santos, SP, Brazil (UTC−3) · Available for remote roles worldwide
+Santos, SP, Brazil (UTC−3) · Remote — overlaps European and North American hours
 sebasortizsanta@gmail.com · [linkedin.com/in/sebastian-o](https://www.linkedin.com/in/sebastian-o-5a00b7203) · [github.com/sebasortiz1989](https://github.com/sebasortiz1989) · [CV site](https://sebasortiz1989.github.io/cv-seba/)
 
 ---
