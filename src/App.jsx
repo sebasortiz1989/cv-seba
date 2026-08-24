@@ -11,70 +11,50 @@ function App() {
     // phone: "",
     const personalData = {
         name: "Juan Sebastian Ortiz",
-        title: "FullStack Developer | .NET | Avalonia | Swift | Swift UI | Xamarin | WPF | Java | JS | React | React Native |",
+        title: "Senior Software Engineer  |  .NET Desktop (WPF · Avalonia · MAUI)  |  AI-Native Development Practice",
         email: "sebasortizsanta@gmail.com",
         linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
         github: "www.github.com/sebasortiz1989",
-        location: "Santos, SP, Brazil",
+        location: "Santos, SP, Brazil (UTC-3) — available for remote roles worldwide",
         profilePictureUrl: picture,
-        summary: "Full Stack Developer with expertise in implementing best programming practices," +
-            " including Design Patterns, SOLID principles, and Domain-Driven Design." +
-            " Proficient in developing and executing unit tests and utilizing LINQ and Git for effective version control." +
-            " Skilled in MVVM architecture and XAML for Front-end development. Experienced in collaborative software development using SCRUM methodology," +
-            " with hands-on experience with WPF, Xamarin.Forms, and Avalonia. \n\n" +
-            "Experienced in Geographic Information Systems (GIS) and utilizing Unity for game development." +
-            "Fluency in Spanish, English, and Portuguese."
+        summary: "Senior software engineer with five years building production .NET systems, specialising in " +
+            "complex cross-platform desktop UI — WPF, Avalonia and .NET MAUI. Currently delivering a full product " +
+            "through AI coding agents under an operating model I designed, where the engineering problem is not " +
+            "generation but verification: independent review, mutation testing, and measuring platform behaviour " +
+            "rather than reasoning about it.\n\n" +
+            "Mechanical engineer by first training, with nine years in CAD/CAM, CNC and materials testing before " +
+            "moving into software. That background is why I treat a claim as something to measure rather than " +
+            "accept — which turns out to be most of the job when working with AI agents. MSc Computer Science " +
+            "in progress at Heriot-Watt. Spanish (native), Portuguese and English (professional)."
     };
 
     const experiences = [
         {
-            title: "Fullstack Developer C#",
+            title: "Senior Full Stack .NET Developer",
             company: "VERION Oleohidraulica BRASIL",
             location: "Santos, SP, Brazil",
             dates: "Jan 2022 - Present",
-            description: "Developed robust agricultural applications with a focus on both frontend and backend using .NET," +
-                " Avalonia, and Xamarin.Forms. Implemented Domain-Driven Design, Scrum methodologies, and design patterns to" +
-                " enhance project structure and efficiency. Utilized LINQ for data query optimization and adhered to" +
-                " SOLID principles for maintainable and scalable code. Managed version control and collaborated effectively" +
-                " using Git.",
+            description: "Engineering software for precision-agriculture operations across desktop and embedded hardware targets.",
             responsibilities: [
-                "Development of cross-platform apps for agricultural applications using Avalonia",
-                "UI development with an emphasis on creating intuitive and interactive interfaces and components",
-                "Development of Skiasharp components to be used in mapping functionalities within the applications",
-                "Development of controllers to manage the interaction between the application frontend and the ViewModel," +
-                " responsible for generating events and executing commands to control electrical components.",
-                "Unit testing for new implementations to ensure functionality, reliability, and code quality.",
-                "Enhanced code performance by utilizing profiling tools and optimizing asynchronous tasks for improved" +
-                " efficiency and responsiveness.",
-                "Worked within a team following Scrum methodologies for project development, using ClickUp for task management and collaboration",
+                "Participated in the architectural migration of core agricultural control systems from WPF to .NET MAUI and Avalonia, unifying one codebase across multiple hardware targets while keeping business-critical systems in service.",
+                "Built a custom mapping and rendering engine on SkiaSharp, delivering real-time GPS visualisation on resource-constrained devices.",
+                "Refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
+                "Drove Domain-Driven Design and SOLID adoption; built a reusable XAML component library on strict MVVM that accelerated feature delivery.",
+                "Ran code review and xUnit coverage to reduce technical debt, and profiled hot paths to optimise performance.",
+                "Worked directly with hydraulics and agronomy engineers to translate physical-system requirements into software specifications.",
             ]
         },
         {
-            title: "Unity Developer",
+            title: "Unity & WPF Developer",
             company: "Life Is The Game",
             location: "Remote",
-            dates: "January 2023 - May 2024",
-            description: "",
+            dates: "May 2021 - Jan 2022",
+            description: "Game UI development and tooling.",
             responsibilities: [
-                "Developed user interfaces using XAML and WPF, applying MVVM design patterns for a Unity game.",
-                "Iteratively refined prototype design ideas into intuitive and user-friendly interfaces.",
-                "Debugged and resolved UI-related gameplay issues through effective teamwork and open communication.",
-                "Integrated Unity Analytics for comprehensive data acquisition within the game.",
-                "Used tools such as Jira, Slack, and GitLab to streamline project development."
-            ]
-        },
-        {
-            title: "Gameplay Programmer",
-            company: "Freelance",
-            location: "Remote",
-            dates: "Apr 2021 - Nov 2021",
-            description: "",
-            responsibilities: [
-                "Completed personal projects utilizing both Unity 3D and 2D.",
-                "Developed scripts and designed game mechanics, levels, and overall game design.",
-                "Implemented animations, sound effects, and visual effects to enhance gameplay.",
-                "Created seamless scene transitions for improved game flow.",
-                "Customized user interfaces to suit each game's unique requirements.",
+                "Designed and implemented complex user interfaces in WPF and XAML, applying MVVM to decouple game logic from visual presentation.",
+                "Refined prototypes into polished interfaces, optimising layout rendering across screen resolutions.",
+                "Diagnosed and resolved UI-related memory leaks.",
+                "Integrated Unity Analytics to capture player behaviour data for product iteration.",
             ]
         },
         {
@@ -82,28 +62,27 @@ function App() {
             company: "Jotagallo S.A.",
             location: "Pereira, Risaralda, Colombia",
             dates: "Mar 2013 - Apr 2021",
-            description: "",
+            description: "Foundry engineering — design, manufacturing automation and quality control.",
             responsibilities: [
-                "Engaged directly with clients to develop new cast components, provide quotes, and deliver customer support throughout the production cycle.",
-                "Developed and managed Excel databases to organize production orders, priorities, and inventory for the foundry.",
-                "Updated production data and generated comprehensive weekly, monthly, and yearly reports with organized data and visual charts.",
-                "Designed parts using Autodesk Inventor or SolidWorks and conducted casting simulations with Click2Cast.",
-                "Created patterns and core boxes for sand molds using CNC programming on Mastercam and Autodesk Artcam, for steel, aluminum, and cast iron parts.",
-                "Managed the materials laboratory and performed metal analyses.",
-                "Contributed to foundry projects involving the design of machines, mechanical components, pneumatics, hydraulics, and automation systems."
+                "Designed cast components in Autodesk Inventor and SolidWorks, and ran casting simulations in Click2Cast.",
+                "Programmed CNC in Mastercam and Autodesk Artcam to produce patterns and core boxes for steel, aluminium and cast-iron parts.",
+                "Managed the materials laboratory and performed metal analyses against engineering specifications.",
+                "Built and maintained production databases, generating weekly, monthly and yearly reports to drive process optimisation.",
+                "Contributed to projects covering machine design, pneumatics, hydraulics and automation systems.",
+                "Worked directly with clients on new components, quoting and technical support through the production cycle.",
             ]
         }
     ];
 
     const education = [
         {
-            degree: "Msc Computer Science",
-            institution: "Heriot Watt University",
+            degree: "MSc Computer Science",
+            institution: "Heriot-Watt University (remote)",
             dates: "February 2025 - Present",
-            details: "Master's Degree"
+            details: "Master's Degree, in progress"
         },
         {
-            degree: "Mechanical Engineer",
+            degree: "BSc Mechanical Engineering",
             institution: "EAFIT University",
             dates: "January 2008 - December 2012",
             details: "Bachelor's Degree"
@@ -111,20 +90,33 @@ function App() {
     ];
 
     const skills = {
-        programmingLanguages: ["C#", "Java", "Swift", "Javascript", "XAML", "HTML", "CSS"],
-        frameworksLibraries: ["Avalonia", "Xamarin", "WPF", "Unity", "Swift UI", "React"],
-        databases: [],
-        tools: [],
-        other: ["Git", "Agile Methodologies", "SQL", "SOLID", "Design Patterns", "Problem Solving"]
+        programmingLanguages: ["C#", "Swift", "TypeScript", "JavaScript", "XAML", "SQL", "Java"],
+        frameworksLibraries: [".NET 8/9/10", "WPF", "Avalonia UI", ".NET MAUI", "ASP.NET Core", "SwiftUI", "React", "Unity", "SkiaSharp"],
+        architecture: ["MVVM", "Domain-Driven Design", "SOLID", "Clean Architecture", "Design Patterns", "ADR practice"],
+        databases: ["SQL Server", "SQLite", "Entity Framework Core", "Dapper"],
+        tools: ["Git", "Azure DevOps", "Claude Code", "xUnit", "Xcode", "Rider / Visual Studio"],
+        other: ["AI coding agents", "Mutation testing", "Code review", "Scrum / Agile", "Spanish, Portuguese, English"]
     };
 
     const projects = [
-        // {
-        //     name: "E-commerce Mockup",
-        //     description: "A front-end mockup for an e-commerce platform featuring product listings, cart functionality, and user authentication.",
-        //     technologies: ["React", "Redux (or Context API)", "CSS Modules"],
-        //     link: "https://github.com/yourusername/ecommerce-mockup" // Example link
-        // }
+        {
+            name: "agent-operating-model",
+            description: "An operating model for building real software with AI coding agents, extracted from a private multi-repository product build. Roles as separate skills so the reviewer is never the author; mutation testing in review; platform probes that measure behaviour instead of reasoning about it, with every finding labelled measured or reasoned; and written continuity through state, ADRs and an auditable board.",
+            technologies: ["Claude Code", "Multi-agent workflows", "ADR practice", "Mutation testing"],
+            link: "https://github.com/sebasortiz1989/agent-operating-model"
+        },
+        {
+            name: "Patas & Passeios — pet-care business app",
+            description: "A cross-platform business application in daily use by a working dog sitter in Santos. Five platform heads (Desktop, macOS, iOS, Android) share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 139 C# files, ~16,500 lines, 150 tests. Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding services and banking the remainder as credit.",
+            technologies: [".NET 10", "Avalonia 12", "Dapper", "SQLite", "MVVM", "xUnit"],
+            link: "https://github.com/sebasortiz1989/DapperDemo"
+        },
+        {
+            name: "WPFGuide",
+            description: "A reference collection of WPF and XAML patterns covering MVVM structure, custom controls, styling and data binding.",
+            technologies: ["C#", "WPF", "XAML", "MVVM"],
+            link: "https://github.com/sebasortiz1989/WPFGuide"
+        }
     ];
 
     return (
@@ -215,7 +207,7 @@ function App() {
             )}
 
             <footer className="resume-footer">
-                <p>Last updated: Jun - 05 - 2025</p>
+                <p>Last updated: August 2026</p>
             </footer>
         </div>
     );
