@@ -11,21 +11,28 @@ function App() {
     // phone: "",
     const personalData = {
         name: "Juan Sebastian Ortiz",
-        title: "Senior Software Engineer  |  .NET Desktop (WPF · Avalonia · MAUI)  |  AI-Native Development Practice",
+        title: "Senior .NET Engineer  |  Cross-Platform Desktop (WPF · Avalonia · .NET MAUI)  |  Industrial & Engineering Systems",
         email: "sebasortizsanta@gmail.com",
         linkedin: "www.linkedin.com/in/sebastian-o-5a00b7203",
         github: "www.github.com/sebasortiz1989",
         location: "Santos, SP, Brazil (UTC-3) — remote, overlapping European and North American hours",
         profilePictureUrl: picture,
-        summary: "Senior software engineer with five years building production .NET systems, specialising in " +
-            "complex cross-platform desktop UI — WPF, Avalonia and .NET MAUI. Currently delivering a full product " +
-            "through AI coding agents under an operating model I designed, where the engineering problem is not " +
-            "generation but verification: independent review, mutation testing, and measuring platform behaviour " +
-            "rather than reasoning about it.\n\n" +
-            "Mechanical engineer by first training, with eight years in CAD/CAM, CNC and materials testing before " +
-            "moving into software. That background is why I treat a claim as something to measure rather than " +
-            "accept — which turns out to be most of the job when working with AI agents. MSc Computer Science " +
-            "in progress at Heriot-Watt. Spanish (native), Portuguese and English (professional)."
+        summary: "Senior engineer specialising in cross-platform desktop software for industrial and engineering " +
+            "systems — five years in production .NET, currently building control and visualisation software that " +
+            "runs on operator hardware in the field.\n\n" +
+            "Principal author of a machine-control application in continuous service for three years — the majority " +
+            "of its commit history — carried across major .NET releases rather than rewritten, and shipping to " +
+            "Windows, Linux, macOS, iOS and Android from a single view layer. Alongside it, a visualisation library " +
+            "whose core is consumed by four different UI frameworks (WPF, WinForms, .NET MAUI, Avalonia), with " +
+            "custom SkiaSharp rendering for real-time positional data on resource-constrained devices.\n\n" +
+            "Mechanical engineer for eight years before software — CAD/CAM, CNC programming and materials " +
+            "laboratory work. I read engineering requirements in their own terms and talk to mechanical, hydraulics " +
+            "and agronomy teams without a translator in the room. The laboratory habit is the one that carried " +
+            "over: a claim is something you measure, not something you accept.\n\n" +
+            "I also run an agent-driven development practice — published, and built around verification rather " +
+            "than generation: roles as separate agent skills so the reviewer is never the author, mutation testing " +
+            "as the review gate, and platform probes kept as evidence. MSc Computer Science in progress at " +
+            "Heriot-Watt. Spanish (native), Portuguese and English (professional)."
     };
 
     const experiences = [
@@ -34,14 +41,15 @@ function App() {
             company: "VERION Oleohidraulica BRASIL",
             location: "Santos, SP, Brazil",
             dates: "Jan 2022 - Present",
-            description: "Engineering software for precision-agriculture operations across desktop and embedded hardware targets.",
+            description: "Control, guidance and visualisation software for precision-agriculture operations, running on desktop workstations and on constrained hardware in the field.",
             responsibilities: [
-                "Participated in the architectural migration of core agricultural control systems from WPF to .NET MAUI and Avalonia, unifying one codebase across multiple hardware targets while keeping business-critical systems in service.",
-                "Built a custom mapping and rendering engine on SkiaSharp, delivering real-time GPS visualisation on resource-constrained devices.",
-                "Refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
-                "Drove Domain-Driven Design and SOLID adoption; built a reusable XAML component library on strict MVVM that accelerated feature delivery.",
-                "Ran code review and xUnit coverage to reduce technical debt, and profiled hot paths to optimise performance.",
-                "Worked directly with hydraulics and agronomy engineers to translate physical-system requirements into software specifications.",
+                "Long-lived ownership: principal author of the operator-facing control application — the majority of its commit history — in continuous service for three years, kept current across major .NET releases instead of being rewritten. Ships to five OS targets from one view layer, localised into five languages including regional variants for the export markets.",
+                "Cross-framework architecture: migrated core control systems from WPF to .NET MAUI and Avalonia while they stayed in service, and maintain a visualisation library whose single core is consumed by four UI frameworks — WPF, WinForms, MAUI and Avalonia — each with its own run host.",
+                "Custom real-time rendering: built mapping and charting engines on SkiaSharp, in 2D and 3D, delivering live positional visualisation at usable frame rates on resource-constrained field devices where off-the-shelf charting could not run.",
+                "Concurrency and responsiveness: refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
+                "Architecture enforced by structure: layering is a build-time guarantee rather than a review convention — the presentation-model assemblies cannot reference the view assemblies, because the project graph forbids it. Drove Domain-Driven Design and SOLID adoption and built a reusable XAML component library on strict MVVM.",
+                "Engineering standards at company scale: shared analyzer and build configuration across every repository — one settings source, StyleCop enforcement, signed assemblies, MSBuild project classification and CI pipelines assembled from shared components.",
+                "Domain translation: work directly with hydraulics and agronomy engineers, turning physical-system requirements and field behaviour into software specifications.",
             ]
         },
         {
@@ -62,7 +70,7 @@ function App() {
             company: "Jotagallo S.A.",
             location: "Pereira, Risaralda, Colombia",
             dates: "Mar 2013 - Apr 2021",
-            description: "Foundry engineering — design, manufacturing automation and quality control.",
+            description: "Eight years in precision manufacturing — the domain background behind the software work.",
             responsibilities: [
                 "Designed cast components in Autodesk Inventor and SolidWorks, and ran casting simulations in Click2Cast.",
                 "Programmed CNC in Mastercam and Autodesk Artcam to produce patterns and core boxes for steel, aluminium and cast-iron parts.",
@@ -90,32 +98,35 @@ function App() {
     ];
 
     const skills = {
-        programmingLanguages: ["C#", "Swift", "TypeScript", "JavaScript", "XAML", "SQL", "Java"],
-        frameworksLibraries: [".NET 8/9/10", "WPF", "Avalonia UI", ".NET MAUI", "ASP.NET Core", "SwiftUI", "React", "Unity", "SkiaSharp"],
-        architecture: ["MVVM", "Domain-Driven Design", "SOLID", "Clean Architecture", "Design Patterns", "ADR practice"],
-        databases: ["SQL Server", "SQLite", "Entity Framework Core", "Dapper"],
-        tools: ["Git", "Azure DevOps", "Claude Code", "xUnit", "Xcode", "Rider / Visual Studio"],
-        other: ["AI coding agents", "Mutation testing", "Code review", "Scrum / Agile", "Spanish, Portuguese, English"]
+        desktopAndXaml: ["WPF", "Avalonia UI", ".NET MAUI", "WinForms", "XAML", "MVVM", "Custom controls", "Component libraries", "Localisation"],
+        programmingLanguages: ["C#", "Swift", "TypeScript", "SQL"],
+        dotNet: [".NET 8/9/10", "ASP.NET Core", "Entity Framework Core", "Dapper", "xUnit"],
+        graphicsAndRealTime: ["SkiaSharp", "Custom 2D and 3D rendering", "GIS and positional data", "Async / concurrency optimisation", "Constrained-hardware targets"],
+        architecture: ["Domain-Driven Design", "SOLID", "Layering enforced by project structure", "ADR practice", "Modular package design"],
+        quality: ["Mutation testing", "Platform probes", "StyleCop and analyzer configuration", "Signed builds", "CI pipelines", "Code review"],
+        aiAssistedEngineering: ["Claude Code", "Multi-agent workflows", "Agent skill authoring", "Output verification"],
+        engineeringDomain: ["CAD/CAM (Inventor, SolidWorks)", "CNC programming (Mastercam, Artcam)", "Materials testing", "Casting simulation"],
+        tools: ["Git", "GitLab CI", "Azure DevOps", "Rider / Visual Studio", "Xcode", "Scrum / Agile"]
     };
 
     const projects = [
+        {
+            name: "AvaloniaFramework",
+            description: "An MVP/navigation framework for Avalonia — ~5,000 lines of C#, 53 tests (measured): a dependency-injection container with layered builders and deferred Factory<T> resolution, an awaitable presenter lifecycle, a navigation controller, and styled controls whose per-state appearance is set through style classes rather than looked up by resource key. MIT licensed, and the framework Patas & Passeios is built on.",
+            technologies: ["C#", ".NET 10", "Avalonia", "MVP", "Dependency injection"],
+            link: "https://github.com/sebasortiz1989/AvaloniaFramework"
+        },
+        {
+            name: "Patas & Passeios — cross-platform business app",
+            description: "A cross-platform business application in daily use by a real operator. Four platform heads — Desktop (Windows and Linux), macOS, iOS and Android — share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 141 C# files, ~17,300 lines, 200 tests (measured). Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding obligations and banking the remainder as credit.",
+            technologies: [".NET 10", "Avalonia 12", "Dapper", "SQLite", "MVVM", "xUnit"],
+            link: "https://github.com/sebasortiz1989/PatasePasseios"
+        },
         {
             name: "agent-operating-model",
             description: "An operating model for building real software with AI coding agents, extracted from a private multi-repository product build. Roles as separate skills so the reviewer is never the author; mutation testing in review; platform probes that measure behaviour instead of reasoning about it, with every finding labelled measured or reasoned; and written continuity through state, ADRs and an auditable board.",
             technologies: ["Claude Code", "Multi-agent workflows", "ADR practice", "Mutation testing"],
             link: "https://github.com/sebasortiz1989/agent-operating-model"
-        },
-        {
-            name: "Patas & Passeios — pet-care business app",
-            description: "A cross-platform business application in daily use by a working dog sitter in Santos. Four platform heads — Desktop (Windows and Linux), macOS, iOS and Android — share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 141 C# files, ~17,300 lines, 200 tests. Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding services and banking the remainder as credit.",
-            technologies: [".NET 10", "Avalonia 12", "Dapper", "SQLite", "MVVM", "xUnit"],
-            link: "https://github.com/sebasortiz1989/PatasePasseios"
-        },
-        {
-            name: "AvaloniaFramework",
-            description: "A small MVP/navigation framework for Avalonia, ~5,000 lines of C#: a dependency-injection container with layered builders and deferred Factory<T> resolution, an awaitable presenter lifecycle, a navigation controller, and styled controls whose per-state appearance is set through style classes rather than looked up by resource key. MIT licensed, and the framework Patas & Passeios is built on.",
-            technologies: ["C#", ".NET", "Avalonia", "MVP", "Dependency injection"],
-            link: "https://github.com/sebasortiz1989/AvaloniaFramework"
         }
     ];
 
@@ -163,6 +174,20 @@ function App() {
                 </Section>
             )}
 
+            {projects.length > 0 && (
+                <Section title="Projects">
+                    {projects.map((proj, index) => (
+                        <ProjectItem
+                            key={index}
+                            name={proj.name}
+                            description={proj.description}
+                            technologies={proj.technologies}
+                            link={proj.link}
+                        />
+                    ))}
+                </Section>
+            )}
+
             {education.length > 0 && (
                 <Section title="Education">
                     {education.map((edu, index) => (
@@ -191,20 +216,6 @@ function App() {
                     ))}
                 </div>
             </Section>
-
-            {projects.length > 0 && (
-                <Section title="Projects">
-                    {projects.map((proj, index) => (
-                        <ProjectItem
-                            key={index}
-                            name={proj.name}
-                            description={proj.description}
-                            technologies={proj.technologies}
-                            link={proj.link}
-                        />
-                    ))}
-                </Section>
-            )}
 
             <footer className="resume-footer">
                 <p>Last updated: August 2026</p>
