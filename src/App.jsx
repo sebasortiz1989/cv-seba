@@ -22,7 +22,7 @@ function App() {
             "through AI coding agents under an operating model I designed, where the engineering problem is not " +
             "generation but verification: independent review, mutation testing, and measuring platform behaviour " +
             "rather than reasoning about it.\n\n" +
-            "Mechanical engineer by first training, with nine years in CAD/CAM, CNC and materials testing before " +
+            "Mechanical engineer by first training, with eight years in CAD/CAM, CNC and materials testing before " +
             "moving into software. That background is why I treat a claim as something to measure rather than " +
             "accept — which turns out to be most of the job when working with AI agents. MSc Computer Science " +
             "in progress at Heriot-Watt. Spanish (native), Portuguese and English (professional)."
@@ -107,15 +107,15 @@ function App() {
         },
         {
             name: "Patas & Passeios — pet-care business app",
-            description: "A cross-platform business application in daily use by a working dog sitter in Santos. Five platform heads (Desktop, macOS, iOS, Android) share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 139 C# files, ~16,500 lines, 150 tests. Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding services and banking the remainder as credit.",
+            description: "A cross-platform business application in daily use by a working dog sitter in Santos. Four platform heads — Desktop (Windows and Linux), macOS, iOS and Android — share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 141 C# files, ~17,300 lines, 200 tests. Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding services and banking the remainder as credit.",
             technologies: [".NET 10", "Avalonia 12", "Dapper", "SQLite", "MVVM", "xUnit"],
-            link: "https://github.com/sebasortiz1989/DapperDemo"
+            link: "https://github.com/sebasortiz1989/PatasePasseios"
         },
         {
-            name: "WPFGuide",
-            description: "A reference collection of WPF and XAML patterns covering MVVM structure, custom controls, styling and data binding.",
-            technologies: ["C#", "WPF", "XAML", "MVVM"],
-            link: "https://github.com/sebasortiz1989/WPFGuide"
+            name: "AvaloniaFramework",
+            description: "A small MVP/navigation framework for Avalonia, ~5,000 lines of C#: a dependency-injection container with layered builders and deferred Factory<T> resolution, an awaitable presenter lifecycle, a navigation controller, and styled controls whose per-state appearance is set through style classes rather than looked up by resource key. MIT licensed, and the framework Patas & Passeios is built on.",
+            technologies: ["C#", ".NET", "Avalonia", "MVP", "Dependency injection"],
+            link: "https://github.com/sebasortiz1989/AvaloniaFramework"
         }
     ];
 
