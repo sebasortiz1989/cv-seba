@@ -48,7 +48,7 @@ function App() {
             title: "Unity & WPF Developer",
             company: "Life Is The Game",
             location: "Remote",
-            dates: "May 2021 - Jan 2022",
+            dates: "May 2021 - December 2021",
             description: "Game UI development and tooling.",
             responsibilities: [
                 "Designed and implemented complex user interfaces in WPF and XAML, applying MVVM to decouple game logic from visual presentation.",

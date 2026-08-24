@@ -138,7 +138,7 @@ hardware targets.
   physical-system requirements into software specifications.
 
 ### Unity & WPF Developer — **Life Is The Game**
-*Remote · May 2021 – Jan 2022*
+*Remote · May 2021 – Dec 2021*
 
 - Complex WPF/XAML interfaces on strict MVVM, decoupling game logic from presentation.
 - Diagnosed and fixed UI memory leaks; integrated Unity Analytics for behavioural data.
