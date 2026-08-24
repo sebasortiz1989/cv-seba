@@ -63,7 +63,7 @@ across outstanding services and banks the remainder as credit.
 | **AI-assisted engineering** | Claude Code, multi-agent workflows, agent skill authoring, prompt and context design, output verification, mutation testing of agent-written tests |
 | **Languages** | C#, Swift, TypeScript, SQL |
 | **.NET** | .NET 8/9/10, WPF, Avalonia UI, .NET MAUI, XAML, ASP.NET Core, Entity Framework Core, Dapper, xUnit |
-| **Apple** | Swift 6, SwiftUI, SwiftData, UIKit, TextKit 2, iCloud Drive / `NSFileCoordinator`, Xcode |
+| **Apple** | Swift 6, SwiftUI, SwiftData, UIKit, Core Data, file coordination, Xcode |
 | **Architecture** | MVVM, Domain-Driven Design, SOLID, Clean Architecture, ADR practice, modular package design |
 | **Graphics / perf** | SkiaSharp, custom rendering, async/concurrency optimisation, GIS integration |
 | **Practice** | Git, Azure DevOps, CI gates, code review, Scrum |
@@ -78,9 +78,9 @@ I build a real iOS product through AI agents, and I built the operating system t
 the output reliable. Both halves matter — the second is the one most teams are missing.
 
 **The product.** Swift 6.3 / SwiftUI / SwiftData iOS client — 127 source files across 7
-modules, 100+ tests green on both macOS and iOS destinations. TextKit 2 and `UITextInput`
-for a custom text layer, iCloud Drive with security-scoped bookmarks and `NSFileCoordinator`
-for an in-place file store, a JSON→Swift design-token generator with byte-identical
+modules, 100+ tests green on both macOS and iOS destinations. A custom text layer over
+UIKit, a document store built on user-owned files with security-scoped bookmarks and
+coordinated reads and writes, and a JSON→Swift design-token generator with byte-identical
 regeneration checks.
 
 **The operating model.** Eleven specialised agent roles authored as Claude Code skills —
@@ -102,13 +102,15 @@ because an agent that launders a guess into a fact is worse than no agent.
 
 ### Three cases where measurement overruled a plausible answer
 
-- **Text geometry.** Resolving a freehand lasso to whole-word ranges: the reasoned answer
-  was TextKit 2 text segments. Measurement showed those are **line-granular and return
-  zero words for single-word paths**. Correct route was `UITextInput` per-character caret
-  geometry — now a written implementation rule.
-- **Undocumented platform behaviour.** A custom action *prepended* to the iOS system edit
-  menu renders inline and first; *appended*, it is buried behind the overflow chevron.
-  Ordering became an acceptance criterion guarded by a test on the menu's first child.
+- **Framework API granularity.** Two platform APIs were candidates for the same job and
+  the modern one was the obvious pick. A probe measured its output as an order of
+  magnitude coarser than the task needed — correct in isolation, useless here. The older,
+  lower-level API was the right route, and the finding became a written implementation
+  rule rather than a preference.
+- **Undocumented ordering behaviour.** Registering an item in a system-provided UI
+  component put it in a different, far less visible position depending on *how* it was
+  registered — a distinction the documentation does not draw. Ordering became an
+  acceptance criterion, guarded by a test asserting position rather than presence.
 - **A check that verified the wrong thing.** A sync script reported a directory "in sync"
   — truthfully, against a destination that had been formally withdrawn. A drift check
   cannot notice its own comparison is wrong; now a standing review question.

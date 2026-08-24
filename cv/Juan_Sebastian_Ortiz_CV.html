@@ -65,7 +65,7 @@ hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
 <tr><td><strong>AI-assisted engineering</strong></td><td>Claude Code, multi-agent workflows, agent skill authoring, prompt and context design, output verification, mutation testing of agent-written tests</td></tr>
 <tr><td><strong>Languages</strong></td><td>C#, Swift, TypeScript, SQL</td></tr>
 <tr><td><strong>.NET</strong></td><td>.NET 8/9/10, WPF, Avalonia UI, .NET MAUI, XAML, ASP.NET Core, Entity Framework Core, Dapper, xUnit</td></tr>
-<tr><td><strong>Apple</strong></td><td>Swift 6, SwiftUI, SwiftData, UIKit, TextKit 2, iCloud Drive / <code>NSFileCoordinator</code>, Xcode</td></tr>
+<tr><td><strong>Apple</strong></td><td>Swift 6, SwiftUI, SwiftData, UIKit, Core Data, file coordination, Xcode</td></tr>
 <tr><td><strong>Architecture</strong></td><td>MVVM, Domain-Driven Design, SOLID, Clean Architecture, ADR practice, modular package design</td></tr>
 <tr><td><strong>Graphics / perf</strong></td><td>SkiaSharp, custom rendering, async/concurrency optimisation, GIS integration</td></tr>
 <tr><td><strong>Practice</strong></td><td>Git, Azure DevOps, CI gates, code review, Scrum</td></tr>
@@ -76,9 +76,9 @@ hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
 <p>I build a real iOS product through AI agents, and I built the operating system that makes</p>
 <p>the output reliable. Both halves matter — the second is the one most teams are missing.</p>
 <p><strong>The product.</strong> Swift 6.3 / SwiftUI / SwiftData iOS client — 127 source files across 7</p>
-<p>modules, 100+ tests green on both macOS and iOS destinations. TextKit 2 and <code>UITextInput</code></p>
-<p>for a custom text layer, iCloud Drive with security-scoped bookmarks and <code>NSFileCoordinator</code></p>
-<p>for an in-place file store, a JSON→Swift design-token generator with byte-identical</p>
+<p>modules, 100+ tests green on both macOS and iOS destinations. A custom text layer over</p>
+<p>UIKit, a document store built on user-owned files with security-scoped bookmarks and</p>
+<p>coordinated reads and writes, and a JSON→Swift design-token generator with byte-identical</p>
 <p>regeneration checks.</p>
 <p><strong>The operating model.</strong> Eleven specialised agent roles authored as Claude Code skills —</p>
 <p>architect, platform developers, planner, researcher, strategist — each with defined scope,</p>
@@ -96,8 +96,8 @@ hr{border:0;border-top:1px solid var(--rule);margin:18px 0}
 <p>because an agent that launders a guess into a fact is worse than no agent.</p>
 <h3>Three cases where measurement overruled a plausible answer</h3>
 <ul>
-<li><strong>Text geometry.</strong> Resolving a freehand lasso to whole-word ranges: the reasoned answer   was TextKit 2 text segments. Measurement showed those are **line-granular and return   zero words for single-word paths**. Correct route was <code>UITextInput</code> per-character caret   geometry — now a written implementation rule.</li>
-<li><strong>Undocumented platform behaviour.</strong> A custom action <em>prepended</em> to the iOS system edit   menu renders inline and first; <em>appended</em>, it is buried behind the overflow chevron.   Ordering became an acceptance criterion guarded by a test on the menu&#x27;s first child.</li>
+<li><strong>Framework API granularity.</strong> Two platform APIs were candidates for the same job and   the modern one was the obvious pick. A probe measured its output as an order of   magnitude coarser than the task needed — correct in isolation, useless here. The older,   lower-level API was the right route, and the finding became a written implementation   rule rather than a preference.</li>
+<li><strong>Undocumented ordering behaviour.</strong> Registering an item in a system-provided UI   component put it in a different, far less visible position depending on <em>how</em> it was   registered — a distinction the documentation does not draw. Ordering became an   acceptance criterion, guarded by a test asserting position rather than presence.</li>
 <li><strong>A check that verified the wrong thing.</strong> A sync script reported a directory &quot;in sync&quot;   — truthfully, against a destination that had been formally withdrawn. A drift check   cannot notice its own comparison is wrong; now a standing review question.</li>
 </ul>
 <hr>
