@@ -31,6 +31,6 @@ The site under `src/` is a **separate** copy of the same facts — its content
 lives in the objects at the top of `src/App.jsx`. Editing one does not change
 the other.
 
-When something changes, update both, then `npm run deploy`. The two disagreeing
-is the failure mode worth watching for: a recruiter comparing the PDF you sent
-against the site you linked is exactly who will notice.
+When something changes, update both, then `npm run deploy`. Two copies drifting
+apart is the failure mode worth watching for — and the PDF and the site are
+often read side by side, so a disagreement between them is visible.
