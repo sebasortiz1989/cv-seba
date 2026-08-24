@@ -20,7 +20,7 @@ function App() {
         summary: "Senior engineer specialising in cross-platform desktop software for industrial and engineering " +
             "systems — five years in production .NET, currently building control and visualisation software that " +
             "runs on operator hardware in the field.\n\n" +
-            "Principal author of a machine-control application in continuous service for three years — the majority " +
+            "Primary developer of a machine-control application in continuous service for three years — the majority " +
             "of its commit history — carried across major .NET releases rather than rewritten, and shipping to " +
             "Windows, Linux, macOS, iOS and Android from a single view layer. Alongside it, a visualisation library " +
             "whose core is consumed by four different UI frameworks (WPF, WinForms, .NET MAUI, Avalonia), with " +
@@ -43,7 +43,7 @@ function App() {
             dates: "Jan 2022 - Present",
             description: "Control, guidance and visualisation software for precision-agriculture operations, running on desktop workstations and on constrained hardware in the field.",
             responsibilities: [
-                "Long-lived ownership: principal author of the operator-facing control application — the majority of its commit history — in continuous service for three years, kept current across major .NET releases instead of being rewritten. Ships to five OS targets from one view layer, localised into five languages including regional variants for the export markets.",
+                "Long-lived continuity: primary developer of the operator-facing control application — the majority of its commit history — in continuous service for three years, kept current across major .NET releases instead of being rewritten. Ships to five OS targets from one view layer, localised into five languages including regional variants for the export markets.",
                 "Cross-framework architecture: migrated core control systems from WPF to .NET MAUI and Avalonia while they stayed in service, and maintain a visualisation library whose single core is consumed by four UI frameworks — WPF, WinForms, MAUI and Avalonia — each with its own run host.",
                 "Custom real-time rendering: built mapping and charting engines on SkiaSharp, in 2D and 3D, delivering live positional visualisation at usable frame rates on resource-constrained field devices where off-the-shelf charting could not run.",
                 "Concurrency and responsiveness: refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
