@@ -20,11 +20,11 @@ function App() {
         summary: "Senior engineer specialising in cross-platform desktop software for industrial and engineering " +
             "systems — five years in production .NET, currently building control and visualisation software that " +
             "runs on operator hardware in the field.\n\n" +
-            "Primary developer of a machine-control application in continuous service for three years — the majority " +
-            "of its commit history — carried across major .NET releases rather than rewritten, and shipping to " +
-            "Windows, Linux, macOS, iOS and Android from a single view layer. Alongside it, a visualisation library " +
-            "whose core is consumed by four different UI frameworks (WPF, WinForms, .NET MAUI, Avalonia), with " +
-            "custom SkiaSharp rendering for real-time positional data on resource-constrained devices.\n\n" +
+            "I work on a machine-control application in continuous service for three years, carried across major " +
+            ".NET releases rather than rewritten, shipping to Windows, Linux, macOS, iOS and Android from a single " +
+            "view layer, and moved from Xamarin.Forms to .NET MAUI to Avalonia while it stayed in service. Alongside " +
+            "it, a visualisation library with custom SkiaSharp rendering for real-time positional data on " +
+            "resource-constrained devices.\n\n" +
             "Mechanical engineer for eight years before software — CAD/CAM, CNC programming and materials " +
             "laboratory work. I read engineering requirements in their own terms and talk to mechanical, hydraulics " +
             "and agronomy teams without a translator in the room. The laboratory habit is the one that carried " +
@@ -43,12 +43,12 @@ function App() {
             dates: "Jan 2022 - Present",
             description: "Control, guidance and visualisation software for precision-agriculture operations, running on desktop workstations and on constrained hardware in the field.",
             responsibilities: [
-                "Long-lived continuity: primary developer of the operator-facing control application — the majority of its commit history — in continuous service for three years, kept current across major .NET releases instead of being rewritten. Ships to five OS targets from one view layer, localised into five languages including regional variants for the export markets.",
-                "Cross-framework architecture: migrated core control systems from WPF to .NET MAUI and Avalonia while they stayed in service, and maintain a visualisation library whose single core is consumed by four UI frameworks — WPF, WinForms, MAUI and Avalonia — each with its own run host.",
+                "Long-lived continuity: development of the operator-facing control application, in continuous service for three years, kept current across major .NET releases instead of being rewritten. Ships to five OS targets from one view layer, localised into five languages including regional variants for the export markets.",
+                "Cross-framework architecture: took the control software from Xamarin.Forms to .NET MAUI and then to Avalonia while it stayed in service, and work on a visualisation library whose core has served WPF, WinForms, MAUI and Avalonia hosts.",
                 "Custom real-time rendering: built mapping and charting engines on SkiaSharp, in 2D and 3D, delivering live positional visualisation at usable frame rates on resource-constrained field devices where off-the-shelf charting could not run.",
                 "Concurrency and responsiveness: refactored synchronous legacy code into async/await, resolving UI-thread blocking that had degraded responsiveness across the product suite.",
                 "Strict layering, enforced by the build: work daily in a codebase where the presentation-model assemblies cannot reference the view assemblies, because the project graph forbids it — layering as a build-time guarantee rather than a review convention. Applied Domain-Driven Design and SOLID throughout, and built a reusable XAML component library on strict MVVM.",
-                "Engineering standards at company scale: shared analyzer and build configuration across every repository — one settings source, StyleCop enforcement, signed assemblies, MSBuild project classification and CI pipelines assembled from shared components.",
+                "Engineering standards at company scale: work within shared analyzer and build configuration across every repository — one settings source, StyleCop enforcement, signed assemblies, MSBuild project classification and CI pipelines assembled from shared components.",
                 "Domain translation: work directly with hydraulics and agronomy engineers, turning physical-system requirements and field behaviour into software specifications.",
             ]
         },
@@ -112,13 +112,13 @@ function App() {
     const projects = [
         {
             name: "AvaloniaFramework",
-            description: "An MVP/navigation framework for Avalonia — ~5,000 lines of C#, 53 tests (measured): a dependency-injection container with layered builders and deferred Factory<T> resolution, an awaitable presenter lifecycle, a navigation controller, and styled controls whose per-state appearance is set through style classes rather than looked up by resource key. MIT licensed, and the framework Patas & Passeios is built on.",
+            description: "An MVP/navigation framework for Avalonia, in C# with its own test suite: a dependency-injection container with layered builders and deferred Factory<T> resolution, an awaitable presenter lifecycle, a navigation controller, and styled controls whose per-state appearance is set through style classes rather than looked up by resource key. MIT licensed, and the framework Patas & Passeios is built on.",
             technologies: ["C#", ".NET 10", "Avalonia", "MVP", "Dependency injection"],
             link: "https://github.com/sebasortiz1989/AvaloniaFramework"
         },
         {
             name: "Patas & Passeios — cross-platform business app",
-            description: "A cross-platform business application in daily use by a real operator. Four platform heads — Desktop (Windows and Linux), macOS, iOS and Android — share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. 141 C# files, ~17,300 lines, 200 tests (measured). Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding obligations and banking the remainder as credit.",
+            description: "A cross-platform business application in daily use by a real operator. Four platform heads — Desktop (Windows and Linux), macOS, iOS and Android — share one Avalonia View and Viewmodel over a Dapper/SQLite data layer. Notable for the money handling: payment is an allocation ledger rather than a paid flag, settling an arbitrary amount across outstanding obligations and banking the remainder as credit.",
             technologies: [".NET 10", "Avalonia 12", "Dapper", "SQLite", "MVVM", "xUnit"],
             link: "https://github.com/sebasortiz1989/PatasePasseios"
         },
